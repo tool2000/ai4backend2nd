@@ -19,6 +19,7 @@
   "homepage": "https://github.com/tool2000/ai4backend2nd#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "mongoose": "^6.2.2",
     "nodemon": "^2.0.15"
   }
 }
