@@ -1,0 +1,22 @@
+{
+  "name": "learn-express",
+  "version": "12.0.0",
+  "description": "readme",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tool2000/ai4backend2nd.git"
+  },
+  "author": "jung dae young",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tool2000/ai4backend2nd/issues"
+  },
+  "homepage": "https://github.com/tool2000/ai4backend2nd#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
