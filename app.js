@@ -4,6 +4,7 @@ const path = require("path")
 const app = express()
 
 
+
 const indexRoute = require("./routes/index.js")
 
 const pickMyFood = () => {
@@ -37,6 +38,9 @@ const reward = ['우정', '행운', '재물', '지혜', '즐거움', '놀라움'
 const randInd = function(arr) {
     return Math.floor(Math.random() * arr.length)
 }
+
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'pug')
 
 app.use("/", indexRoute)
 // app.get("/", (req, res) => {
