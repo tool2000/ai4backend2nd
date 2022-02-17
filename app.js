@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Hello, world')
+    res.send('<h1>Hello, world</h1>')
 })
 // req: request(요청), 사용자의 브라우저 정보, 질문(주소창), 로그인정보 
 // response(응답) : 사이트 내용 html
