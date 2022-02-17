@@ -6,9 +6,12 @@ const app = express()
 
 const indexRoute = require('./routes/index.js')
 
-food = [ '돈까스', '김밥', '초밥', '떡볶이', '샌드위치', '파스타', '부침개', '칼국수', '피자', '치킨', '볶음밥', '짜장&탕수육', '짬뽕&탕수육', '콜라 비빔밥', '오므라이스' ]
+const pickMyFood = () => {
+    const food = [ '돈까스', '김밥', '초밥', '떡볶이', '샌드위치', '파스타', '부침개', '칼국수', '피자', '치킨', '볶음밥', '짜장&탕수육', '짬뽕&탕수육', '콜라 비빔밥', '오므라이스' ]
+    let ind = Math.floor(Math.random() * food.length)
+    return food[ind]
+}
 
-ind = Math.floor(Math.random() * food.length)
 
 app.use('/', indexRoute)
 // app.get('/', (req, res) => {
@@ -18,7 +21,7 @@ app.use('/', indexRoute)
 // })
 
 app.get('/food', (req, res)=>{
-    res.send()
+    res.send(`오늘 당신에게 추천드리는 메뉴는 바로 ${ pickMyFood() } 입니다!!`)
 })
 
 app.get('/webtoon', (req, res) => {
